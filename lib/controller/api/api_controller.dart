@@ -7,6 +7,8 @@ class ApiController extends GetxController {
   static const baseUrl =
       "http://api.weatherapi.com/v1/forecast.json?key=a08d088007c541cb8e9180634231609";
 
+
+
   Future<WeatherModel?> getWeatherData(String searchText) async {
     final url = "$baseUrl&q=$searchText&days=7";
     try {
@@ -20,7 +22,7 @@ class ApiController extends GetxController {
       }
     } catch (e) {
       Get.defaultDialog(
-        title: e.toString(),
+        title: "Api Exception",
       );
     }
     return null;

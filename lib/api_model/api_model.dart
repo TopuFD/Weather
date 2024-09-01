@@ -36,10 +36,10 @@ class Location {
   String? name;
   String? region;
   String? country;
-  double? lat;
-  double? lon;
+  num? lat;
+  num? lon;
   String? tzId;
-  int? localtimeEpoch;
+  num? localtimeEpoch;
   String? localtime;
 
   Location(
@@ -78,29 +78,29 @@ class Location {
 }
 
 class Current {
-  int? lastUpdatedEpoch;
+  num? lastUpdatedEpoch;
   String? lastUpdated;
-  double? tempC;
-  double? tempF;
-  int? isDay;
+  num? tempC;
+  num? tempF;
+  num? isDay;
   Condition? condition;
-  double? windMph;
-  double? windKph;
-  int? windDegree;
+  num? windMph;
+  num? windKph;
+  num? windDegree;
   String? windDir;
-  double? pressureMb;
-  double? pressureIn;
-  double? precipMm;
-  double? precipIn;
-  int? humidity;
-  int? cloud;
-  double? feelslikeC;
-  double? feelslikeF;
-  double? visKm;
-  double? visMiles;
-  double? uv;
-  double? gustMph;
-  double? gustKph;
+  num? pressureMb;
+  num? pressureIn;
+  num? precipMm;
+  num? precipIn;
+  num? humidity;
+  num? cloud;
+  num? feelslikeC;
+  num? feelslikeF;
+  num? visKm;
+  num? visMiles;
+  num? uv;
+  num? gustMph;
+  num? gustKph;
 
   Current(
       {lastUpdatedEpoch,
@@ -189,7 +189,7 @@ class Current {
 class Condition {
   String? text;
   String? icon;
-  int? code;
+  num? code;
 
   Condition({text, icon, code});
 
@@ -271,26 +271,26 @@ class Forecastday {
 }
 
 class Day {
-  double? maxtempC;
-  double? maxtempF;
-  double? mintempC;
-  double? mintempF;
-  double? avgtempC;
-  double? avgtempF;
-  double? maxwindMph;
-  double? maxwindKph;
-  double? totalprecipMm;
-  double? totalprecipIn;
-  double? totalsnowCm;
-  double? avgvisKm;
-  double? avgvisMiles;
-  double? avghumidity;
-  int? dailyWillItRain;
-  int? dailyChanceOfRain;
-  int? dailyWillItSnow;
-  int? dailyChanceOfSnow;
+  num? maxtempC;
+  num? maxtempF;
+  num? mintempC;
+  num? mintempF;
+  num? avgtempC;
+  num? avgtempF;
+  num? maxwindMph;
+  num? maxwindKph;
+  num? totalprecipMm;
+  num? totalprecipIn;
+  num? totalsnowCm;
+  num? avgvisKm;
+  num? avgvisMiles;
+  num? avghumidity;
+  num? dailyWillItRain;
+  num? dailyChanceOfRain;
+  num? dailyWillItSnow;
+  num? dailyChanceOfSnow;
   Condition? condition;
-  double? uv;
+  num? uv;
 
   Day(
       {maxtempC,
@@ -373,9 +373,9 @@ class Astro {
   String? moonrise;
   String? moonset;
   String? moonPhase;
-  int? moonIllumination;
-  int? isMoonUp;
-  int? isSunUp;
+  num? moonIllumination;
+  num? isMoonUp;
+  num? isSunUp;
 
   Astro(
       {sunrise,
@@ -413,39 +413,39 @@ class Astro {
 }
 
 class Hour {
-  int? timeEpoch;
+  num? timeEpoch;
   String? time;
-  double? tempC;
-  double? tempF;
-  int? isDay;
+  num? tempC;
+  num? tempF;
+  num? isDay;
   Condition? condition;
-  double? windMph;
-  double? windKph;
-  int? windDegree;
+  num? windMph;
+  num? windKph;
+  num? windDegree;
   String? windDir;
-  double? pressureMb;
-  double? pressureIn;
-  double? precipMm;
-  double? precipIn;
-  int? humidity;
-  int? cloud;
-  double? feelslikeC;
-  double? feelslikeF;
-  double? windchillC;
-  double? windchillF;
-  double? heatindexC;
-  double? heatindexF;
-  double? dewpointC;
-  double? dewpointF;
-  int? willItRain;
-  int? chanceOfRain;
-  int? willItSnow;
-  int? chanceOfSnow;
-  double? visKm;
-  double? visMiles;
-  double? gustMph;
-  double? gustKph;
-  double? uv;
+  num? pressureMb;
+  num? pressureIn;
+  num? precipMm;
+  num? precipIn;
+  num? humidity;
+  num? cloud;
+  num? feelslikeC;
+  num? feelslikeF;
+  num? windchillC;
+  num? windchillF;
+  num? heatindexC;
+  num? heatindexF;
+  num? dewpointC;
+  num? dewpointF;
+  num? willItRain;
+  num? chanceOfRain;
+  num? willItSnow;
+  num? chanceOfSnow;
+  num? visKm;
+  num? visMiles;
+  num? gustMph;
+  num? gustKph;
+  num? uv;
 
   Hour(
       {timeEpoch,
